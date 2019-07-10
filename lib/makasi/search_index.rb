@@ -157,6 +157,7 @@ module Makasi
       end
     end
 
+    # revert resource title to name
     def resource_name_of(doc)
       content_nodes = doc.css(Makasi::Config.resource_name_selector)
       if content_nodes.present?
